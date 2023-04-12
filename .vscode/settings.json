@@ -1,0 +1,14 @@
+{
+    "makefile.launchConfigurations": [
+        {
+            "cwd": "${workspaceFolder}",
+            "binaryPath": "${workspaceFolder}\\main.exe",
+            "binaryArgs": []
+        },
+        {
+            "cwd": "c:\\Users\\USER\\projects\\David library collection\\Statistics\\build\\debug",
+            "binaryPath": "c:\\Users\\USER\\projects\\David library collection\\Statistics\\build\\debug\\debug.exe",
+            "binaryArgs": []
+        }
+    ]
+}
