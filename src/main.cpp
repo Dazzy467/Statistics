@@ -15,9 +15,23 @@ float mySqrt(float num)
     return sqrt;
 }
 
+float myPow(float num,int pow)
+{
+    if (pow % 2 == 0 && pow != 0)
+        return myPow(num*num,(pow/2));
+    else if (pow % 2 != 0)
+        return num * myPow(num*num,(pow-1)/2);
+    else if (pow < 0)
+        return myPow(1/num,-pow);
+    else if (pow == 0)
+        return 1;
+    
+    return float{};
+}
 
 int main()
 {
+    std::cout << "mypow: " << myPow(5,2) << std::endl;
     std::cout << "Mysqrt: " << mySqrt(25.3) << std::endl;
     int a[] {50,50,30,20,10,20,30,50,30,10,30,50,30};
     // int a[] {29, 19, 21, 52, 91, 50, 82, 65, 53, 84, 51, 90, 93};
